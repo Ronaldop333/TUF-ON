@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative z-10">
-        {/* Background Gradient Sutil */}
+        {/* Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-cyber-blue/5 to-neon-purple/3"></div>
 
         {/* Content */}
@@ -21,7 +21,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Logo */}
+          {/* Logo TUF-on */}
           <motion.div
             className="flex justify-center mb-8"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -30,8 +30,8 @@ export default function Home() {
           >
             <div className="relative w-32 h-32 md:w-40 md:h-40">
               <Image
-                src="/logo-tradgen.png"
-                alt="TradGen Logo"
+                src="/logo-tuf.png"
+                alt="TUF-on Logo"
                 fill
                 className="object-contain"
                 priority
@@ -39,17 +39,16 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* TradGen Text */}
+          {/* TUF-on Text */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="mb-6"
           >
-            <h1 className="text-7xl md:text-9xl font-tech font-bold">
+            <h1 className="text-6xl md:text-8xl font-tech font-bold">
               <span className="bg-gradient-to-r from-cyber-blue to-matrix-green bg-clip-text text-transparent">
-                <span className="text-cyber-blue">T</span>RAD
-                <span className="text-matrix-green">G</span>EN
+                TUF-<span className="text-neon-purple">on</span>
               </span>
             </h1>
             <motion.p 
@@ -58,17 +57,17 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.7 }}
             >
-              QUANTUM TRADING TECHNOLOGY
+              Teoria Universal dos Fluxos • Laboratório Virtual
             </motion.p>
           </motion.div>
-          
+
           <motion.p 
             className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.7 }}
           >
-            Neural networks reinventing financial markets
+            Um projeto científico vivo onde o universo é sua arena de simulação, exploração e descoberta.
           </motion.p>
 
           <motion.div
@@ -82,15 +81,15 @@ export default function Home() {
               whileTap={{ scale: 0.98 }}
               className="bg-gradient-to-r from-cyber-blue to-matrix-green text-deep-space px-8 py-4 rounded-lg font-tech font-bold text-lg hover:shadow-lg hover:shadow-cyber-blue/20 transition-all duration-300"
             >
-              LAUNCH TERMINAL
+              EXPLORAR UNIVERSO
             </motion.button>
-            
+
             <motion.button 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="border border-cyber-blue text-cyber-blue px-8 py-4 rounded-lg font-tech font-bold text-lg hover:bg-cyber-blue/5 transition-all duration-300"
             >
-              VIEW DEMO
+              SOBRE A TUF
             </motion.button>
           </motion.div>
         </motion.div>
