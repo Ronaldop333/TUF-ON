@@ -3,13 +3,19 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**"] // Cache da build, exceto cache interno do Next.js
     },
     "dev": {
-      "cache": false
+      "cache": false // Desenvolvimento em tempo real sem cache
     },
     "lint": {
       "dependsOn": ["^build"]
+    },
+    "typecheck": {
+      "outputs": []
+    },
+    "test": {
+      "outputs": []
     }
   }
 }
