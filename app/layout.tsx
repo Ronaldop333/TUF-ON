@@ -3,7 +3,7 @@ import { Inter, Orbitron } from 'next/font/google'
 import './globals.css'
 import Header from '../components/Header'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-base'
 })
@@ -14,8 +14,8 @@ const orbitron = Orbitron({
 })
 
 export const metadata: Metadata = {
-  title: 'TradGen - Quantum Trading Technology',
-  description: 'Neural networks reinventing financial markets',
+  title: 'TUF-on - Laboratório Virtual de Física Emergente',
+  description: 'Simulações, teoria, descobertas e exploração do universo com a Teoria Universal dos Fluxos (TDUF).',
 }
 
 export default function RootLayout({
@@ -25,9 +25,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${orbitron.variable}`}>
-      <body className="bg-deep-space text-white font-base">
+      <body className="bg-gray-dark text-white font-base">
         <Header />
-        <main className="pt-20"> {/* Espaço para o header fixo */}
+
+        {/* ⚠️ Modo em construção */}
+        <div className="under-construction">
+          Você está acessando um projeto científico em fase de construção.
+        </div>
+
+        <main className="pt-20">
           {children}
         </main>
       </body>
