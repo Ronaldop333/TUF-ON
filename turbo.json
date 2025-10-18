@@ -1,12 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"] // Cache da build, exceto cache interno do Next.js
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
-      "cache": false // Desenvolvimento em tempo real sem cache
+      "cache": false
     },
     "lint": {
       "dependsOn": ["^build"]
